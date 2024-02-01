@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <script src="form.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="imageContainer">
+            <div class="textbox">
+                <img src="cashpic.png" alt="Money Book" class="logoimage">
+                <p class="imageText">CASHEX</p>
+            </div>
+        </div>
+        <div class="formContainer">
+            <div class="paragraphContainer">
+                <p class="mainParagraph">Welcome to CASHEX,</p>
+                <p class="sloganParagraph">A system built for speed.</p>
+            </div>
+            <div class="formSection">
+                <form action="" class="actualForm">
+                    <p class="createAccountText">Create an Account</p>
+                    <div class="formInputsContainer">
+                        <div class="firstRow">
+                            <div class="firstNameBlock">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                            <div class="lastNameBlock">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName" name="lastName">
+                            </div>
+                        </div>
+                        <div class="secondRow">
+                            <div class="emailBlock">
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="phoneNumBlock">
+                                <label for="phoneNum">PHONE NUMBER</label>
+                                <input type="text" id="phoneNum" name="phoneNum">
+                            </div>
+                        </div>
+                        <div class="thirdRow">
+                            <div class="passwordBlock">
+                                <label for="pass">PASSWORD</label>
+                                <input type="text" id="pass" name="pass">
+                            </div>
+                            <div class="confirmBlock">
+                                <label for="confirmpass">CONFIRM PASSWORD</label>
+                                <input type="text" id="confirmpass" name="confirmpass">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? Log In</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
