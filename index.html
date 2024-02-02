@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <script src="form.js"></script>
 </head>
 <body>
@@ -21,7 +24,7 @@
         <div class="formContainer">
             <div class="paragraphContainer">
                 <p class="mainParagraph">Welcome to CASHEX,</p>
-                <p class="sloganParagraph">A system built for speed.</p>
+                <p class="sloganParagraph">A system designed for speed.</p>
             </div>
             <div class="formSection">
                 <form action="" class="actualForm">
@@ -29,37 +32,38 @@
                     <div class="formInputsContainer">
                         <div class="firstRow">
                             <div class="firstNameBlock">
-                                <label for="firstName">FIRST NAME</label>
-                                <input type="text" id="firstName" name="firstName">
+                                <label for="firstName">FIRST NAME *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Bob" required>
                             </div>
                             <div class="lastNameBlock">
-                                <label for="lastName">LAST NAME</label>
-                                <input type="text" id="lastName" name="lastName">
+                                <label for="lastName">LAST NAME *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
                             </div>
                         </div>
                         <div class="secondRow">
                             <div class="emailBlock">
-                                <label for="email">EMAIL</label>
-                                <input type="text" id="email" name="email">
+                                <label for="email">EMAIL *</label>
+                                <input type="email" id="email" name="email" placeholder="xyz@email.com" required>
                             </div>
                             <div class="phoneNumBlock">
                                 <label for="phoneNum">PHONE NUMBER</label>
-                                <input type="text" id="phoneNum" name="phoneNum">
+                                <input type="tel" id="phoneNum" name="phoneNum" placeholder="(123) - 4567890">
                             </div>
                         </div>
                         <div class="thirdRow">
                             <div class="passwordBlock">
                                 <label for="pass">PASSWORD</label>
-                                <input type="text" id="pass" name="pass">
+                                <input type="password" id="pass" name="pass" class="error passwordinput" required>
+                                <p class="noMatchMessage">* Passwords do not match</p>
                             </div>
                             <div class="confirmBlock">
                                 <label for="confirmpass">CONFIRM PASSWORD</label>
-                                <input type="text" id="confirmpass" name="confirmpass">
+                                <input type="password" id="confirmpass" name="confirmpass" class="error passwordconfirm" required>
                             </div>
                         </div>
                     </div>
                     <button type="submit">Create Account</button>
-                    <p>Already have an account? Log In</p>
+                    <p class="existingAccountStatement">Already have an account? <a href="" class="linktext">Log In</a></p>
                 </form>
             </div>
         </div>

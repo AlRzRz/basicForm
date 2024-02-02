@@ -47,9 +47,9 @@ table {
 
 /* MEYER RESET ABOVE */ 
 
-div {
+/* div {
     border: solid black;
-}
+} */
 
 .mainContainer {
     height: 100vh;
@@ -65,7 +65,7 @@ div {
 }
 
 .formSection {
-    border: red solid;
+    /* border: red solid; */
     flex: 1;
 }
 
@@ -74,32 +74,134 @@ div {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+    margin-left: 2rem;
 }
 
 .formInputsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+    /* border: solid black; */
+    margin-left: 2rem;
+}
 
+form {
+    /* border: cyan solid; */
+    margin-left: 1rem;
+}
+
+label {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+}
+
+input {
+    height: 0.8rem;
+    background-color: #544258;
+    border: none;
+    border-radius: 5%;
+    width: 12rem;
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px black;
+    padding: 0.7rem;
+}
+
+input:focus {
+    /* border: none; */
+    outline: orange 1px solid;
+}
+
+input:user-invalid {
+    outline: 1px solid red;
 }
 
 .firstRow, .secondRow, .thirdRow {
     display: flex;
+    gap: 7rem;
 }
 
 input, label {
     display: block;
 }
 
+::placeholder {
+    color: rgb(136, 136, 136);
+}
+
+.noMatchMessage {
+    margin-top: 0.2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+button[type="submit"] {
+    padding: 0.8rem;
+    width: 14rem;
+    background-color: #ED846E;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    box-shadow: inset 0 0 5px black;
+    transition: all 0.2s ease;
+    margin-top: 5.6rem;
+    margin-left: 2rem;
+}
+
+button[type="submit"]:hover {
+    box-shadow: inset 0 0 15px black;
+    background-color: greenyellow;
+    color: black;
+}
+
+button[type="submit"]:focus {
+    box-shadow: inset 0 0 15px black;
+    background-color: greenyellow;
+    color: black;
+    outline: greenyellow solid 1px;
+}
+
+.existingAccountStatement {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 0.7rem;
+    margin-left: 2rem;
+}
+
+.linktext {
+    color: #ED846E;
+    text-decoration:none;
+    transition: all 0.2s ease;
+}
+
+.linktext:hover {
+    color: greenyellow;
+}
+
 .paragraphContainer {
-    height: 37%;
-    margin-left: 1rem;
+    height: 34%;
+    margin-left: 2rem;
 }
 
 .mainParagraph {
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-style: italic;
     font-size: 3em;
     font-weight: 400;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .sloganParagraph {
@@ -107,7 +209,7 @@ input, label {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1.1rem;
     margin-left: 0.5rem;
 }
 
