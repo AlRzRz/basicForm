@@ -244,8 +244,71 @@ button[type="submit"]:focus {
     width: 11rem;
 }
 
+.error {
+    outline: 1px solid red;
+}
+
+.error:focus {
+    outline: 1px solid red;
+}
 
 
+@media only screen and (max-width: 1000px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 25%;
+        background-position: 50% 100%;
+    }
+
+    .textbox {
+        margin-top: 0%;
+        display: none;
+    }
+
+    .imageText {
+        font-size: 4rem;
+    }
+
+    .logoimage {
+        width: 5rem;
+    }
+
+    .mainParagraph {
+        margin-top: 1.6rem;
+        font-size: 2.5rem;
+    }
+
+    .sloganParagraph {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+    }
+
+    .createAccountText {
+        font-size: 1.4rem;
+        margin-top: 0rem;
+    }
+
+    .formContainer {
+        align-items: center;
+    }
+
+    .formInputsContainer {
+        margin-top: 1.6rem;
+        gap: 2rem;
+    }
+
+    button[type="submit"] {
+        margin-top: 3rem;
+    }
+
+    .paragraphContainer {
+        height: 28%;
+    }
+}
 
 
 

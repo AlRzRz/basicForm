@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <script src="form.js"></script>
+    <script src="form.js" defer></script>
 </head>
 <body>
     <div class="mainContainer">
@@ -33,7 +33,7 @@
                         <div class="firstRow">
                             <div class="firstNameBlock">
                                 <label for="firstName">FIRST NAME *</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Bob" required>
+                                <input type="text" id="firstName" name="firstName" placeholder="Bob" required autofocus>
                             </div>
                             <div class="lastNameBlock">
                                 <label for="lastName">LAST NAME *</label>
@@ -53,12 +53,12 @@
                         <div class="thirdRow">
                             <div class="passwordBlock">
                                 <label for="pass">PASSWORD</label>
-                                <input type="password" id="pass" name="pass" class="error passwordinput" required>
-                                <p class="noMatchMessage">* Passwords do not match</p>
+                                <input type="password" id="pass" name="pass" class="passwordinput" required>
                             </div>
                             <div class="confirmBlock">
                                 <label for="confirmpass">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirmpass" name="confirmpass" class="error passwordconfirm" required>
+                                <input type="password" id="confirmpass" name="confirmpass" class="passwordconfirm" required>
+                                <p class="noMatchMessage">* Passwords do not match</p>
                             </div>
                         </div>
                     </div>
